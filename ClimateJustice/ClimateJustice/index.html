@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 Cuidemos Nuestro Planeta Juntos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="title">🌍 Cuidemos Nuestro Planeta</h1>
+            <p class="subtitle">Aprendamos cómo el cambio climático afecta a todos</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <button class="nav-btn active" data-section="intro">🏠 Inicio</button>
+            <button class="nav-btn" data-section="climate">🌡️ ¿Qué es?</button>
+            <button class="nav-btn" data-section="affected">👨‍👩‍👧‍👦 ¿Quién sufre?</button>
+            <button class="nav-btn" data-section="examples">📚 Ejemplos</button>
+            <button class="nav-btn" data-section="help">🤝 ¿Cómo ayudar?</button>
+            <button class="nav-btn" data-section="elnino">🌊 El Niño</button>
+            <button class="nav-btn" data-section="credits">👥 Créditos</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Intro Section -->
+        <section id="intro" class="section active">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-content">
+                        <h2>¡Hola a todos bienvenidos a nuestra pagina! 🌟</h2>
+                        <p>Nuestro planeta Tierra es como una gran casa donde vivimos todos juntos. Pero a veces, algunos cambios hacen que sea más difícil para ciertas familias vivir cómodamente.</p>
+                        <div class="earth-animation">
+                            <div class="earth">🌍</div>
+                            <div class="clouds">☁️ ☁️ ☁️</div>
+                        </div>
+                        <button class="cta-btn" onclick="showSection('climate')">
+                            ¡Empecemos a aprender! 🚀
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Climate Section -->
+        <section id="climate" class="section">
+            <div class="container">
+                <h2>🌡️ ¿Qué es el Cambio Climático?</h2>
+                
+                <div class="info-cards">
+                    <div class="info-card climate-card" data-topic="temperature">
+                        <div class="card-icon">🌡️</div>
+                        <h3>Temperatura</h3>
+                        <p>Imagina que la Tierra tiene fiebre. Se está calentando más de lo normal.</p>
+                        <div class="thermometer">
+                            <div class="thermometer-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="info-card climate-card" data-topic="weather">
+                        <div class="card-icon">🌦️</div>
+                        <h3>Clima Loco</h3>
+                        <p>A veces llueve mucho, a veces no llueve nada. El clima se vuelve impredecible.</p>
+                        <div class="weather-animation">
+                            <span class="weather-icon">☀️</span>
+                            <span class="weather-icon">🌧️</span>
+                            <span class="weather-icon">❄️</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card climate-card" data-topic="effects">
+                        <div class="card-icon">🌊</div>
+                        <h3>Efectos</h3>
+                        <p>Los mares suben, los hielos se derriten, y algunos lugares se vuelven muy secos.</p>
+                        <div class="wave-animation"></div>
+                    </div>
+                </div>
+
+                <div class="explanation-box">
+                    <div class="mascot">🐻</div>
+                    <div class="speech-bubble">
+                        <p><strong>¿Sabías que?</strong> El cambio climático es como cuando tu habitación se calienta mucho en verano. ¡Pero esto le pasa a todo el planeta!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Affected Groups Section -->
+        <section id="affected" class="section">
+            <div class="container">
+                <h2>👨‍👩‍👧‍👦 ¿Quiénes Sufren Más?</h2>
+                <p class="section-intro">Aunque todos vivimos en el mismo planeta, algunas familias sienten más los efectos del cambio climático.</p>
+                
+                <div class="affected-groups">
+                    <div class="group-card" data-group="poor">
+                        <div class="group-icon">🏚️</div>
+                        <h3>Familias con Menos Dinero</h3>
+                        <div class="group-content">
+                            <p>Estas familias viven en casas que no son muy fuertes contra las tormentas o el calor.</p>
+                            <ul class="effects-list">
+                                <li>🏠 Sus casas se dañan fácilmente</li>
+                                <li>💧 No tienen agua limpia cuando hay sequía</li>
+                                <li>🍎 Les cuesta más comprar comida cuando es cara</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="group-card" data-group="rural">
+                        <div class="group-icon">🚜</div>
+                        <h3>Familias del Campo</h3>
+                        <div class="group-content">
+                            <p>Los granjeros y sus familias dependen de la lluvia y el buen clima para cultivar comida.</p>
+                            <ul class="effects-list">
+                                <li>🌱 Sus plantas no crecen sin lluvia</li>
+                                <li>🐄 Sus animales necesitan agua y pasto</li>
+                                <li>🥕 Sin cosechas, no tienen para comer o vender</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="group-card" data-group="islands">
+                        <div class="group-icon">🏝️</div>
+                        <h3>Personas en Islas</h3>
+                        <div class="group-content">
+                            <p>Las familias que viven en islas pequeñas ven cómo el mar sube y se acerca a sus casas.</p>
+                            <ul class="effects-list">
+                                <li>🌊 El mar cada vez está más cerca</li>
+                                <li>🧂 El agua salada daña sus cultivos</li>
+                                <li>🏃‍♀️ Algunas familias tienen que mudarse</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="group-card" data-group="elderly">
+                        <div class="group-icon">👴</div>
+                        <h3>Abuelitos y Niños Pequeños</h3>
+                        <div class="group-content">
+                            <p>Los abuelitos y bebés se enferman más fácilmente cuando hace mucho calor o frío.</p>
+                            <ul class="effects-list">
+                                <li>🤒 Se enferman con temperaturas extremas</li>
+                                <li>💊 Necesitan más cuidados médicos</li>
+                                <li>🏠 No pueden moverse fácilmente en emergencias</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section id="examples" class="section">
+            <div class="container">
+                <h2>📚 Ejemplos de la Vida Real</h2>
+                
+                <div class="examples-container">
+                    <div class="example-card" data-example="drought">
+                        <div class="example-header">
+                            <div class="example-icon">🌵</div>
+                            <h3>La Sequía de María</h3>
+                        </div>
+                        <div class="example-story">
+                            <div class="character">👧</div>
+                            <div class="story-content">
+                                <p><strong>María</strong> vive en un pueblo pequeño donde su papá cultiva maíz.</p>
+                                <div class="story-steps">
+                                    <div class="step">
+                                        <span class="step-icon">☀️</span>
+                                        <span>Este año no ha llovido casi nada</span>
+                                    </div>
+                                    <div class="step">
+                                        <span class="step-icon">🌱</span>
+                                        <span>Las plantas de maíz no pueden crecer</span>
+                                    </div>
+                                    <div class="step">
+                                        <span class="step-icon">😢</span>
+                                        <span>La familia tiene menos comida y dinero</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example-card" data-example="flood">
+                        <div class="example-header">
+                            <div class="example-icon">🌊</div>
+                            <h3>La Inundación de Carlos</h3>
+                        </div>
+                        <div class="example-story">
+                            <div class="character">👦</div>
+                            <div class="story-content">
+                                <p><strong>Carlos</strong> vive cerca de un río con su abuela.</p>
+                                <div class="story-steps">
+                                    <div class="step">
+                                        <span class="step-icon">🌧️</span>
+                                        <span>Llovió muchísimo durante días</span>
+                                    </div>
+                                    <div class="step">
+                                        <span class="step-icon">🌊</span>
+                                        <span>El río se desbordó e inundó su casa</span>
+                                    </div>
+                                    <div class="step">
+                                        <span class="step-icon">🏠</span>
+                                        <span>Tuvieron que irse a vivir a un refugio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example-card" data-example="heat">
+                        <div class="example-header">
+                            <div class="example-icon">🔥</div>
+                            <h3>El Calor de la Abuela Ana</h3>
+                        </div>
+                        <div class="example-story">
+                            <div class="character">👵</div>
+                            <div class="story-content">
+                                <p><strong>La Abuela Ana</strong> vive en la ciudad en una casa pequeña.</p>
+                                <div class="story-steps">
+                                    <div class="step">
+                                        <span class="step-icon">🌡️</span>
+                                        <span>Este verano hizo más calor que nunca</span>
+                                    </div>
+                                    <div class="step">
+                                        <span class="step-icon">❄️</span>
+                                        <span>Su casa no tiene aire acondicionado</span>
+                                    </div>
+                                    <div class="step">
+                                        <span class="step-icon">🤒</span>
+                                        <span>Se sintió muy mal y tuvo que ir al hospital</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interactive-question">
+                    <div class="question-mascot">🦉</div>
+                    <div class="question-bubble">
+                        <h3>¿Qué tienen en común María, Carlos y la Abuela Ana?</h3>
+                        <div class="answer-buttons">
+                            <button class="answer-btn" data-correct="false">Viven en el mismo lugar</button>
+                            <button class="answer-btn" data-correct="true">Necesitan más ayuda cuando el clima cambia</button>
+                            <button class="answer-btn" data-correct="false">Tienen la misma edad</button>
+                        </div>
+                        <div class="answer-feedback" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help Section -->
+        <section id="help" class="section">
+            <div class="container">
+                <h2>🤝 ¿Cómo Podemos Ayudar?</h2>
+                <p class="section-intro">¡Todos podemos hacer algo para cuidar nuestro planeta y ayudar a nuestros amigos!</p>
+                
+                <div class="help-categories">
+                    <div class="help-category">
+                        <h3>🌱 Cosas que TÚ puedes hacer</h3>
+                        <div class="help-actions">
+                            <div class="action-item">
+                                <span class="action-icon">💡</span>
+                                <span>Apagar las luces cuando no las uses</span>
+                            </div>
+                            <div class="action-item">
+                                <span class="action-icon">🚲</span>
+                                <span>Caminar o usar bicicleta cuando sea posible</span>
+                            </div>
+                            <div class="action-item">
+                                <span class="action-icon">♻️</span>
+                                <span>Reciclar y reutilizar cosas</span>
+                            </div>
+                            <div class="action-item">
+                                <span class="action-icon">💧</span>
+                                <span>No desperdiciar agua</span>
+                            </div>
+                            <div class="action-item">
+                                <span class="action-icon">🌳</span>
+                                <span>Cuidar las plantas y sembrar árboles</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="help-category">
+                        <h3>👨‍👩‍👧‍👦 Cosas que las FAMILIAS pueden hacer</h3>
+                        <div class="help-actions">
+                            <div class="action-item">
+                                <span class="action-icon">🤝</span>
+                                <span>Ayudar a familias que lo necesiten</span>
+                            </div>
+                            <div class="action-item">
+                                <span class="action-icon">🏠</span>
+                                <span>Hacer casas más resistentes al clima</span>
+                            </div>
+                            <div class="action-item">
+                                <span class="action-icon">📚</span>
+                                <span>Enseñar a otros sobre el cambio climático</span>
+                            </div>
+                            <div class="action-item">
+                                <span class="action-icon">🗳️</span>
+                                <span>Elegir líderes que cuiden el planeta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="help-category">
+                        <h3>🌍 Cosas que el MUNDO puede hacer</h3>
+                        <div class="help-actions">
+                            <div class="action-item">
+                                <span class="action-icon">⚡</span>
+                                <span>Usar energía del sol y del viento</span>
+                            </div>
+                            <div class="action-item">
+                                <span class="action-icon">🚌</span>
+                                <span>Crear transporte más limpio</span>
+                            </div>
+                            <div class="action-item">
+                                <span class="action-icon">🏥</span>
+                                <span>Construir hospitales y refugios</span>
+                            </div>
+                            <div class="action-item">
+                                <span class="action-icon">💰</span>
+                                <span>Ayudar con dinero a quien lo necesite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commitment-section">
+                    <h3>🌟 ¡Haz tu promesa al planeta!</h3>
+                    <div class="commitment-form">
+                        <p>¿Qué prometes hacer para cuidar nuestro planeta?</p>
+                        <div class="commitment-options">
+                            <label class="commitment-option">
+                                <input type="checkbox" data-commitment="lights">
+                                <span class="checkmark">✓</span>
+                                <span>Apagar las luces 💡</span>
+                            </label>
+                            <label class="commitment-option">
+                                <input type="checkbox" data-commitment="water">
+                                <span class="checkmark">✓</span>
+                                <span>Cuidar el agua 💧</span>
+                            </label>
+                            <label class="commitment-option">
+                                <input type="checkbox" data-commitment="recycle">
+                                <span class="checkmark">✓</span>
+                                <span>Reciclar más ♻️</span>
+                            </label>
+                            <label class="commitment-option">
+                                <input type="checkbox" data-commitment="help">
+                                <span class="checkmark">✓</span>
+                                <span>Ayudar a otros 🤝</span>
+                            </label>
+                        </div>
+                        <button class="commitment-btn" onclick="makeCommitment()">¡Hago mi promesa! 🌟</button>
+                        <div class="commitment-result" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- El Niño Section -->
+        <section id="elnino" class="section">
+            <div class="container">
+                <h2>🌊 ¿Qué es El Niño?</h2>
+                
+                <div class="elnino-intro">
+                    <div class="elnino-mascot">🐟</div>
+                    <div class="elnino-content">
+                        <p class="section-intro">El fenómeno de El Niño es un patrón climático que ocurre cada 2 a 7 años, cuando las aguas del océano Pacífico se calientan más de lo normal.</p>
+                    </div>
+                </div>
+
+                <div class="elnino-info">
+                    <div class="elnino-card">
+                        <div class="card-icon">🌊</div>
+                        <h3>¿Qué pasa?</h3>
+                        <p>Esto provoca cambios en el clima en muchas partes del mundo, como sequías, lluvias intensas, pérdida de cultivos y desastres naturales.</p>
+                    </div>
+
+                    <div class="elnino-card">
+                        <div class="card-icon">🌍</div>
+                        <h3>¿Es natural?</h3>
+                        <p>Es un fenómeno natural, pero el cambio climático puede intensificar sus efectos.</p>
+                    </div>
+                </div>
+
+                <div class="elnino-effects">
+                    <h3>🌦️ Efectos de El Niño</h3>
+                    <div class="effects-grid">
+                        <div class="effect-item">
+                            <span class="effect-icon">🏜️</span>
+                            <span>Sequías en algunas regiones</span>
+                        </div>
+                        <div class="effect-item">
+                            <span class="effect-icon">🌧️</span>
+                            <span>Lluvias intensas en otras áreas</span>
+                        </div>
+                        <div class="effect-item">
+                            <span class="effect-icon">🌾</span>
+                            <span>Pérdida de cultivos</span>
+                        </div>
+                        <div class="effect-item">
+                            <span class="effect-icon">🌪️</span>
+                            <span>Desastres naturales</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="explanation-box">
+                    <div class="mascot">🐠</div>
+                    <div class="speech-bubble">
+                        <p><strong>¿Sabías que?</strong> El nombre "El Niño" significa "el niño" en español, porque los pescadores peruanos notaron que este fenómeno solía ocurrir cerca de la Navidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credits Section -->
+        <section id="credits" class="section">
+            <div class="container">
+                <h2>👥 Créditos</h2>
+                
+                <div class="credits-content">
+                    <div class="credits-card teacher-card">
+                        <div class="card-icon">👨‍🏫</div>
+                        <h3>Maestro</h3>
+                        <p class="name">Norberto Alonso Chin</p>
+                    </div>
+
+                    <div class="credits-card students-card">
+                        <div class="card-icon">👨‍🎓👩‍🎓</div>
+                        <h3>Estudiantes que crearon la aplicación</h3>
+                        <div class="students-list">
+                            <div class="student-name">• Octavio Millan</div>
+                            <div class="student-name">• Nicky Caamal</div>
+                            <div class="student-name">• Gabriel Felix</div>
+                            <div class="student-name">• Antonella Nietos</div>
+                            <div class="student-name">• Dylan Gallardo</div>
+                        </div>
+                    </div>
+
+                    <div class="credits-card school-card">
+                        <div class="card-icon school-logo">
+                            <img src="colegio-montreal-logo.png" alt="Logo Colegio Montreal" class="logo-image">
+                        </div>
+                        <h3>Colegio</h3>
+                        <p class="name">Colegio Montreal</p>
+                    </div>
+                </div>
+
+                <div class="credits-footer">
+                    <div class="credits-mascot">🌟</div>
+                    <p>¡Gracias por aprender con nosotros sobre el cambio climático!</p>
+                    <div class="credits-hearts">💚 💛 💙 🧡 💜</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-mascot">🌍💚</div>
+                <p>Recuerda: Cada pequeña acción cuenta para cuidar nuestro planeta y ayudar a todos nuestros amigos.</p>
+                <div class="footer-hearts">💚 💛 💙 🧡 💜</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
